@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+  
+  .topnav {
+    position: relative;
+    top:0;
+    left:0;
+    align-items: center;
+    justify-content: space-between;
+    background:#fefefe;
+    min-height:10vh;
+    
+   
+}
+
+.topnav .pdtLogo{
+    position: relative;
+    top:40px;
+    left:20px;
+    text-decoration: none;
+    background:#020753 ;
+    font-size: 1rem;
+    font-weight:300;
+    color:#fff;
+   padding:10px;
+   border-radius:50%;
+    
+}
+
+
+.topnav ul{
+    position: relative;
+    display: flex;
+    left:45%;
+}
+
+.topnav ul li{
+    list-style: none;
+}
+
+.topnav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1.3rem;
+    display: inline-block;
+    padding: 20px 10px;
+    color:#020753;
+}
+
+.topnav ul li a:not(.log):hover {
+    background-color: #f01212;
+    color: white;
+    border: none;
+}
+
+.topnav li .log{
+    background: transparent;
+    margin-left:2.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding:0.8rem 0.2rem;
+    width:130px;
+    font-family: inherit;
+    border:0.1px solid #000;
+    border-radius: 40px;
+    
+
+}
+
+.topnav li .log:hover{
+
+    background-color: #f01212;
+    color: white;
+    border: none;
+}
+
+.mainContent{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+  .topnav a.active {
+    background-color: #7fffd4;
+    color: white;
+    border: none;
+  }
+
+img{
+    width:100%;
+    display:block;
+}
+
+.pdtContainer{
+    width:60%;
+    margin:0 auto;
+}
+
+.top-title,.btm-title{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    padding:0.6rem 0;
+}
+
+.top-title{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:400;
+    padding:1.3rem 0;
+    opacity:0.8;
+}
+
+.btm-title{
+    font-size:1rem;
+    font-weight:500;
+    text-transform: uppercase;
+}
+
+.text{
+    font-weight:500;
+    font-size:1rem;
+    line-height:1.5;
+    opacity:0.5;
+    margin:0.4rem 0;
+}
+
+.products{
+    background:aliceblue;
+    padding:3.2rem 0;
+}
+
+.products .text{
+    margin:0.9rem auto;
+    text-align:center;
+    width:70%;
+}
+
+.product{
+    margin:3rem;
+    position:relative;
+}
+
+.pdtContent{
+    margin:3rem 0.5rem 2rem 0.5rem;
+    background: var(#808080);
+    cursor: pointer;
+}
+
+.product-img{
+    background: var(#fefefe);
+    box-shadow: 0 0 20px 10px var(#fefefe);
+    width:500px;
+    height:300px;
+    margin:0 auto;
+}
+
+.pdtBtns{
+    display: flex;
+    justify-content: center;
+    margin-top:1.4rem;
+    opacity:1;
+}
+
+.cart-btn, .buy-btn{
+    background: transparent;
+    padding:0.8rem 0.2rem;
+    width:130px;
+    font-family: inherit;
+    text-transform: uppercase;
+    border:0.5px solid #000;
+
+}
+
+.cart-btn:hover {
+    background-color:#f01212;
+    color:#fff;
+}
+
+.buy-btn:hover{
+    background-color: #7fffd4;
+    color:#fff;
+}
+
+.pdtInfo{
+    background:white;
+    padding:2rem;
+}
+
+.pdtInfo-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating span{
+    color:red;
+}
+
+.pdtName{
+    text-decoration: none;
+    color:#1B206F;
+    display: block;
+    font-size:1rem;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.pdtPrice{
+    display: inline-block;
+    padding-top:0.6rem;
+    padding-right:0.6rem;
+    color:#1B206F;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.pdtPrice:first-of-type{
+    color:red;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.product:hover .product-img img{
+    transform: scale(1.05);
+}
+
+
+.product:hover .pdtBtns{
+    opacity:0.9;
+}
+
+.discount .btm-title{
+    background:#7fffd4;
+    color:#fff;
+    position:absolute;
+    top:0;
+    left:0;
+    display:inline-block;
+    padding:0.5rem;
+    writing-mode:vertical-lr;
+    z-index:1;
+    letter-spacing:2px;
+}
